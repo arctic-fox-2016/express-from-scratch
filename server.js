@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.set('view engine', 'jade');
 
 var mongoose   = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/purexpress');
