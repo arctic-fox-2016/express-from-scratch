@@ -1,0 +1,12 @@
+<html lang="en">
+  <head>
+      GET
+  </head>
+  <body class="container">
+      <ul>
+        <% postmans2.forEach(function(postman) { %>
+              <li><%= postman._id %> - <%= postman.name %></li>
+              <% }); %>
+      </ul>
+  </body>
+</html>
