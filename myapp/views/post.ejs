@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+      POST
+  </head>
+  <body class="container">
+    <%if(isPost){%>
+          Posted Successfully
+
+            <ul>
+
+                    <li><%= postman%>  is updated</li>
+
+            </ul>
+      <%}%>
+
+
+      <%if(isDeleted){%>
+            Deleted Successfully
+
+              <ul>
+
+                      <li><%= postman%>  is deleted</li>
+
+              </ul>
+        <%}%>
+
+        <%if(isUpdated){%>
+              Updated Successfully
+
+                <ul>
+
+                        <li><%= postman%>  is updated</li>
+
+                </ul>
+          <%}%>
+  </body>
+</html>
